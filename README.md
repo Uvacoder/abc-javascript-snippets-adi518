@@ -4,7 +4,7 @@
 
 # JSsnippets on Facebook
 
-find us on [Facebook](https://www.facebook.com/snippetsJS)
+Find us on [Facebook](https://www.facebook.com/snippetsJS).
 
 # How to generate a random number in a given range
 
@@ -129,7 +129,7 @@ myArray.flat(1); // [2, 3, 4, 5 ,7,7, [8, 9, [1, 1]]]
 myArray.flat(2); // [2, 3, 4, 5 ,7,7, 8, 9, [1, 1]]
 
 //if you dont know the depth of the array you can use infinity
-myArray.flat(infinity); // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
+myArray.flat(Infinity); // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
 ```
 
 # Get unique values in an array
@@ -137,19 +137,19 @@ myArray.flat(infinity); // [2, 3, 4, 5 ,7,7, 8, 9, 1, 1];
 ```javascript
 const numbers = [1, 1, 3, 2, 5, 3, 4, 7, 7, 7, 8];
 
-//Ex1
+//first option
 const unieqNumbers = numbers.filter((v, i, a) => a.indexOf(v) === i);
 console.log(unieqNumbers); //[1,3,2,5,4,7,8]
 
-//Ex2
+//second option
 const unieqNumbers2 = Array.from(new Set(numbers));
 console.log(unieqNumbers2); //[1,3,2,5,4,7,8]
 
-//Ex3
+//third option
 const unieqNumbers3 = [...new Set(numbers)];
 console.log(unieqNumbers3); //[1,3,2,5,4,7,8]
 
-//EX4 lodash
+//forth option (using lodash)
 const unieqNumbers4 = _.uniq(numbers);
 console.log(unieqNumbers4); //[1,3,2,5,4,7,8]
 ```
@@ -162,9 +162,10 @@ function copyToClipboard() {
   copyText.select();
   document.execCommand('copy');
 }
+
 //new API
 function copyToClipboard() {
-  navigator.clipboard.writeText(document.querySelector('#myInput').value);
+  navigator.clipboard.writeText(document.getElementById('myInput'));
 }
 ```
 
@@ -234,7 +235,7 @@ const countMyFruits = myFruits.reduce((countFruits, fruit) => {
 console.log(countMyFruits);
 // { Apple:3, Banana:1, Mango:2, Orange:1 }
 
-//seconf option
+//second option
 const fruitsCounter = {};
 
 for (const fruit of myFruits) {
@@ -268,7 +269,7 @@ Object.is('foo', 'foo'); // true
 
 Object.is(null, null); // true
 
-Object.is(Nan, Nan); // true 😱
+Object.is(NaN, NaN); // true 😱
 
 const foo = { a: 1 };
 const bar = { a: 1 };
