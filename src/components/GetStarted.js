@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import * as Scroll from 'react-scroll';
 
-import Emoji from 'components/Emoji';
 import Button from 'components/Button';
 
 import pjson from '../../package.json';
@@ -54,28 +53,6 @@ const GitHubStar = () => (
   </StyledGitHubStar>
 );
 
-const StyledPointer = styled.div`
-  margin-top: 3rem;
-`;
-
-const Pointer = () => (
-  <StyledPointer>
-    {/* eslint-disable jsx-a11y/accessible-emoji */}
-    <div className="animated bounce infinite slow">
-      <Emoji
-        ariaLabel="Get Started"
-        style={{
-          position: 'absolute',
-          transform: 'translateX(-50%)',
-          textShadow: '0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25)'
-        }}
-      >
-        👇
-      </Emoji>
-    </div>
-  </StyledPointer>
-);
-
 const StyledGitHubButton = styled(Button)`
   @media (max-width: 425px) {
     display: none;
@@ -97,7 +74,6 @@ const GetStarted = () => (
       <GitHubButton />
     </Buttons>
     <GitHubStar />
-    {/* <Pointer /> */}
   </StyledGetStarted>
 );
 

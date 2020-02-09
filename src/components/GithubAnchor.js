@@ -1,11 +1,8 @@
 import React from 'react';
-// import styled from 'styled-components';
 
 import { SocialIcon } from './Social';
 
 import pjson from '../../package.json';
-
-// const StyledGitHubAnchor = styled(SocialIcon)``;
 
 const GitHubAnchor = () => (
   <SocialIcon>

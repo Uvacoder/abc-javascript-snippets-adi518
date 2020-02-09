@@ -1,9 +1,6 @@
 import React from 'react';
-// import styled from 'styled-components';
 
 import { SocialIcon } from './Social';
-
-// const StyledFacebookAnchor = styled(SocialIcon)``;
 
 const FacebookLogo = () => (
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import pjson from '../../package.json';
 
 const StyledTitle = styled.span`
-  // visibility: hidden;
-
   @media (max-width: 425px) {
     display: none;
   }
