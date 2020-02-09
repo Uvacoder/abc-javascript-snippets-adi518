@@ -10,11 +10,7 @@ const FacebookLogo = () => (
 
 const FacebookAnchor = () => (
   <SocialIcon>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://www.facebook.com/snippetsJS"
-    >
+    <a href="https://www.facebook.com/snippetsJS">
       <FacebookLogo />
     </a>
   </SocialIcon>

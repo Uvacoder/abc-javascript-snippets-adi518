@@ -8,11 +8,10 @@ import pjson from '../../package.json';
 
 const StyledGetStarted = styled.div`
   display: flex;
-  font-size: 1.5rem;
   margin-top: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   flex-direction: column;
-  text-transform: uppercase;
 `;
 
 const Buttons = styled.div`
@@ -60,7 +59,7 @@ const StyledGitHubButton = styled(Button)`
 `;
 
 const GitHubButton = () => (
-  <a target="_blank" rel="noopener noreferrer" href={pjson.repository.url}>
+  <a href={pjson.repository.url}>
     <StyledGitHubButton>GitHub</StyledGitHubButton>
   </a>
 );

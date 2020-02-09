@@ -1,47 +1,54 @@
 import Prism from 'prismjs';
-import styled from 'styled-components';
+import React, { useState } from 'react';
+import { useEffectOnce } from 'react-use';
 import ReactMarkdown from 'react-markdown';
-import React, { useState, useEffect } from 'react';
-
-import snippetsPath from 'SNIPPETS.md';
+import styled, { css } from 'styled-components';
 
 import 'prism-themes/themes/prism-shades-of-purple.css';
 
-const StyledMarkdown = styled.div`
-  margin: auto;
+const inlineStyle = css`
+  h1:first-child {
+    margin-top: 4rem;
+  }
+`;
+
+export const StyledMarkdown = styled.div`
+  width: 100%;
 
   :not(pre) > code[class*='language-'],
   pre[class*='language-'] {
     margin-top: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
   }
 
-  h1 {
-    margin-top: 6rem;
+  code[class*='language-'],
+  pre[class*='language-'] {
+    line-height: 40px;
+  }
 
-    &::before {
-      content: '📝'; // FIXME: find a better looking emoji
-      margin-right: 1ch;
-    }
+  ${({ inline }) => inline && inlineStyle}
+
+  h1:not(:first-child) {
+    margin-top: 6rem;
   }
 `;
 
-const Markdown = () => {
-  const [snippets, setSnippets] = useState(null);
+const Markdown = ({ pathToMarkdown, inline }) => {
+  const [markdown, setMarkdown] = useState(null);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     (async () => {
-      const snippets = await fetch(snippetsPath);
-      const text = await snippets.text();
-      setSnippets(text);
+      const markdown = await fetch(pathToMarkdown);
+      const text = await markdown.text();
+      setMarkdown(text);
       Prism.highlightAll();
     })();
-  }, []);
+  });
 
   return (
-    <StyledMarkdown>
-      <ReactMarkdown source={snippets} />
+    <StyledMarkdown inline={inline}>
+      <ReactMarkdown source={markdown} />
     </StyledMarkdown>
   );
 };

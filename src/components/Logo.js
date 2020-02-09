@@ -27,7 +27,7 @@ const StyledLogo = styled.div`
   transform: skew(-10deg, 0deg);
   padding: calc(1rem * var(--scale));
   transition: width 0.5s height 0.5s;
-  background: rgb(93, 0, 165);
+  background: var(--color-foreground-rgb);
   background: linear-gradient(
     0deg,
     rgba(93, 0, 165, 0.3309698879551821) 0%,

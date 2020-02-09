@@ -16,7 +16,7 @@ const StyledNav = styled.div`
     position: fixed;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: rgba(var(--color-foreground-rgba), 0.85);
+    background-color: rgba(var(--color-foreground-rgb), 0.85);
 
     // FIXME: hacky workaround
     svg {

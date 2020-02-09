@@ -6,7 +6,7 @@ import pjson from '../../package.json';
 
 const GitHubAnchor = () => (
   <SocialIcon>
-    <a target="_blank" rel="noopener noreferrer" href={pjson.repository.url}>
+    <a href={pjson.repository.url}>
       <svg
         focusable="false"
         aria-hidden="true"

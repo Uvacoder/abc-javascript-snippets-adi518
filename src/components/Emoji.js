@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Emoji = ({ children, ariaLabel = 'Emoji', ...restProps }) => (
-  <span role="img" aria-label={ariaLabel} {...restProps}>
-    {children}
-  </span>
+const Emoji = React.forwardRef(
+  ({ children, ariaLabel = 'Emoji', ...restProps }, ref) => (
+    <span ref={ref} role="img" aria-label={ariaLabel} {...restProps}>
+      {children}
+    </span>
+  )
 );
-
-export const InlineEmoji = ({ children }) => <Emoji>&nbsp;{children}</Emoji>;
 
 export default Emoji;

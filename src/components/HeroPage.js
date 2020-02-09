@@ -3,10 +3,10 @@ import styled from 'styled-components';
 const HeroHeader = styled.div`
   display: flex;
   min-height: 100vh;
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   align-items: center;
   flex-direction: column;
   justify-content: center;

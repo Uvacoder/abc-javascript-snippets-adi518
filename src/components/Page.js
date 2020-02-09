@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 
-const Page = styled.div`
-  padding: 4rem 14rem;
+export const StyledPage = styled.div`
+  display: flex;
   min-height: 100vh;
+  padding: 4rem 14rem;
+  flex-direction: column;
+
+  > h1:not(:first-child) {
+    margin-top: 4rem;
+  }
 
   @media (max-width: 1024px) {
     padding-left: 6rem;
@@ -13,5 +19,7 @@ const Page = styled.div`
     padding: 2rem;
   }
 `;
+
+const Page = StyledPage;
 
 export default Page;
