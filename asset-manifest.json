@@ -1,26 +1,27 @@
 {
   "files": {
     "main.css": "/JavaScript-snippets/static/css/main.0613649d.chunk.css",
-    "main.js": "/JavaScript-snippets/static/js/main.2bc3f106.chunk.js",
-    "main.js.map": "/JavaScript-snippets/static/js/main.2bc3f106.chunk.js.map",
+    "main.js": "/JavaScript-snippets/static/js/main.edba05d6.chunk.js",
+    "main.js.map": "/JavaScript-snippets/static/js/main.edba05d6.chunk.js.map",
     "runtime-main.js": "/JavaScript-snippets/static/js/runtime-main.2d8a6bb0.js",
     "runtime-main.js.map": "/JavaScript-snippets/static/js/runtime-main.2d8a6bb0.js.map",
     "static/css/2.0ac66d06.chunk.css": "/JavaScript-snippets/static/css/2.0ac66d06.chunk.css",
-    "static/js/2.0cdf6ee9.chunk.js": "/JavaScript-snippets/static/js/2.0cdf6ee9.chunk.js",
-    "static/js/2.0cdf6ee9.chunk.js.map": "/JavaScript-snippets/static/js/2.0cdf6ee9.chunk.js.map",
+    "static/js/2.4a3eeb45.chunk.js": "/JavaScript-snippets/static/js/2.4a3eeb45.chunk.js",
+    "static/js/2.4a3eeb45.chunk.js.map": "/JavaScript-snippets/static/js/2.4a3eeb45.chunk.js.map",
     "index.html": "/JavaScript-snippets/index.html",
-    "precache-manifest.f57d7d1d9c1736f2896eaf05d6e41e80.js": "/JavaScript-snippets/precache-manifest.f57d7d1d9c1736f2896eaf05d6e41e80.js",
+    "precache-manifest.9de1228b0cd1de2edd3c0fb9f13d8b09.js": "/JavaScript-snippets/precache-manifest.9de1228b0cd1de2edd3c0fb9f13d8b09.js",
     "service-worker.js": "/JavaScript-snippets/service-worker.js",
     "static/css/2.0ac66d06.chunk.css.map": "/JavaScript-snippets/static/css/2.0ac66d06.chunk.css.map",
     "static/css/main.0613649d.chunk.css.map": "/JavaScript-snippets/static/css/main.0613649d.chunk.css.map",
-    "static/js/2.0cdf6ee9.chunk.js.LICENSE.txt": "/JavaScript-snippets/static/js/2.0cdf6ee9.chunk.js.LICENSE.txt",
-    "static/media/SNIPPETS.md": "/JavaScript-snippets/static/media/SNIPPETS.7c8c2b08.md"
+    "static/js/2.4a3eeb45.chunk.js.LICENSE.txt": "/JavaScript-snippets/static/js/2.4a3eeb45.chunk.js.LICENSE.txt",
+    "static/media/SNIPPETS.md": "/JavaScript-snippets/static/media/SNIPPETS.7c8c2b08.md",
+    "static/media/promo.png": "/JavaScript-snippets/static/media/promo.50ef4bf8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2d8a6bb0.js",
     "static/css/2.0ac66d06.chunk.css",
-    "static/js/2.0cdf6ee9.chunk.js",
+    "static/js/2.4a3eeb45.chunk.js",
     "static/css/main.0613649d.chunk.css",
-    "static/js/main.2bc3f106.chunk.js"
+    "static/js/main.edba05d6.chunk.js"
   ]
 }
