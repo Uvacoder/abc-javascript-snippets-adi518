@@ -14,7 +14,7 @@ import Social from 'components/Social';
 import HeroPage from 'components/HeroPage';
 import Markdown from 'components/Markdown';
 import GetStarted from 'components/GetStarted';
-import GitHubAnchor from 'components/GitHubAnchor';
+
 
 
 import snippetsPath from 'SNIPPETS.md';
@@ -32,7 +32,7 @@ function Root() {
           <Title />
           <Social>
             
-            <GitHubAnchor />
+            
           </Social>
         </Nav>
         <Logo />
