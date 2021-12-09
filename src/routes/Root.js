@@ -15,7 +15,7 @@ import HeroPage from 'components/HeroPage';
 import Markdown from 'components/Markdown';
 import GetStarted from 'components/GetStarted';
 import GitHubAnchor from 'components/GitHubAnchor';
-import FacebookAnchor from 'components/FacebookAnchor';
+
 
 import snippetsPath from 'SNIPPETS.md';
 import promo from 'images/promo.png';
@@ -31,7 +31,7 @@ function Root() {
         <Nav>
           <Title />
           <Social>
-            <FacebookAnchor />
+            
             <GitHubAnchor />
           </Social>
         </Nav>
